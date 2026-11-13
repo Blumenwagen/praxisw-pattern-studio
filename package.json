@@ -1,5 +1,5 @@
 {
-  "name": "mozayk",
+  "name": "praxisw-pattern-studio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "check:frost": "node scripts/check-frost-css.mjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:standalone": "node scripts/build-praxisw-standalone.mjs",
+    "test:praxisw": "node scripts/test-praxisw.mjs"
   },
   "dependencies": {
     "@fontsource-variable/bitcount-grid-single": "^5.3.0",

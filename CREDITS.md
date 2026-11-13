@@ -87,3 +87,7 @@ The following appear to be project-owned and have no external attribution in the
 
 - **gifski-wasm** is licensed under **AGPL-3.0-or-later**. Review compliance before distributing the app.
 - **GSAP** uses its own standard license. See [gsap.com/standard-license](https://gsap.com/standard-license) for commercial and redistribution terms.
+
+## Praxis W adaptation
+
+The logo-focused studio at `src/praxisw/` was added for the supplied Praxis W logo and the card-pattern brief. Its botanical geometry comes only from that user-supplied SVG. Its new entry point uses the existing React, TypeScript and Vite setup. The upstream mosaic editor remains at `mosaic.html`. The adaptation does not change upstream licensing.

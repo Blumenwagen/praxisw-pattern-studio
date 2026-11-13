@@ -8,7 +8,7 @@ const root = fileURLToPath(new URL(".", import.meta.url));
 export default defineConfig({
   plugins: [react()],
   // Custom domain (mozayk.design) serves from the site root.
-  base: "/",
+  base: "./",
   // LightningCSS minify rewrites `backdrop-filter` to `-webkit-backdrop-filter`
   // only. Chrome ignores the prefixed property, so frost works in `vite dev`
   // (unminified) and dies on GitHub Pages.
@@ -17,6 +17,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
+        mosaic: resolve(root, "mosaic.html"),
         logo: resolve(root, "logo.html"),
         gallery: resolve(root, "gallery.html"),
         notFound: resolve(root, "404.html"),
